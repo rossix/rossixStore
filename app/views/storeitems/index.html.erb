@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Storeitems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artnr</th>
+      <th>Vendor</th>
+      <th>Description</th>
+      <th>Grammage</th>
+      <th>Size</th>
+      <th>Note</th>
+      <th>Inventory</th>
+      <th>Stockyard</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @storeitems.each do |storeitem| %>
+      <tr>
+        <td><%= storeitem.artnr %></td>
+        <td><%= storeitem.vendor %></td>
+        <td><%= storeitem.description %></td>
+        <td><%= storeitem.grammage %></td>
+        <td><%= storeitem.size %></td>
+        <td><%= storeitem.note %></td>
+        <td><%= storeitem.inventory %></td>
+        <td><%= storeitem.stockyard %></td>
+        <td><%= storeitem.price %></td>
+        <td><%= link_to 'Show', storeitem , :class => 'btn btn-default btn-xs'%></td>
+        <td><%= link_to 'Edit', edit_storeitem_path(storeitem) %></td>
+        <td><%= link_to 'Destroy', storeitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Storeitem', new_storeitem_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artnr: MyString
+  vendor: MyString
+  description: MyString
+  grammage: MyString
+  size: MyString
+  note: MyText
+  inventory: 1
+  stockyard: MyString
+  price: 9.99
+
+two:
+  artnr: MyString
+  vendor: MyString
+  description: MyString
+  grammage: MyString
+  size: MyString
+  note: MyText
+  inventory: 1
+  stockyard: MyString
+  price: 9.99

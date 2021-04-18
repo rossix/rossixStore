@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Artnr:</strong>
+  <%= @storeitem.artnr %>
+</p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @storeitem.vendor %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @storeitem.description %>
+</p>
+
+<p>
+  <strong>Grammage:</strong>
+  <%= @storeitem.grammage %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @storeitem.size %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @storeitem.note %>
+</p>
+
+<p>
+  <strong>Inventory:</strong>
+  <%= @storeitem.inventory %>
+</p>
+
+<p>
+  <strong>Stockyard:</strong>
+  <%= @storeitem.stockyard %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @storeitem.price %>
+</p>
+
+<%= link_to 'Edit', edit_storeitem_path(@storeitem) %> |
+<%= link_to 'Back', storeitems_path %>

@@ -1,0 +1,62 @@
+<%= form_with(model: storeitem) do |form| %>
+  <% if storeitem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(storeitem.errors.count, "error") %> prohibited this storeitem from being saved:</h2>
+
+      <ul>
+        <% storeitem.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :artnr %>
+    <%= form.text_field :artnr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor %>
+    <%= form.text_field :vendor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grammage %>
+    <%= form.text_field :grammage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size %>
+    <%= form.text_field :size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note %>
+    <%= form.text_area :note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inventory %>
+    <%= form.number_field :inventory %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stockyard %>
+    <%= form.text_field :stockyard %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
